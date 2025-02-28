@@ -1,54 +1,68 @@
-# React + TypeScript + Vite
+# Scrap Chase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun, car-themed Snake-like collecting game built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Game Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Scrap Chase is an engaging game where players control a car to collect car parts while avoiding obstacles. The game features:
 
-## Expanding the ESLint configuration
+- Dynamic gameplay with increasing difficulty
+- Car part collection mechanics
+- Obstacle avoidance
+- Time-based challenges
+- Progressive speed increase as you collect more parts
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React
+- TypeScript
+- Vite
+- CSS
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Game Mechanics
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Controls**: Use arrow keys to navigate the car
+- **Objective**: Collect car parts to reach the target score before time runs out
+- **Challenges**: 
+  - Avoid bus stop obstacles
+  - Race against the clock
+  - Navigate with increasing speed
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Installation and Setup
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/bonsaivaras/scrap-chase.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd scrap-chase
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:5173`
+
+## Game Features
+
+- **Win Screen**: Displays a discount code upon successful completion
+- **Game Over Screen**: Shows different backgrounds based on failure reason
+- **Responsive Design**: Adapts to different screen sizes
+- **Score Tracking**: Monitors parts collected vs. goal
+
+## License
+
+MIT
+
+## Acknowledgements
+
+- Game assets and design by Ovoko
